@@ -57,6 +57,6 @@ const links = [
   }
 ];
 var list = links.map(function (link) {
-  return ("<li><a href=" + link.url + ">" + link.labels + "</a></li>");
+  return ("<div class='clButtoms col-md-3 col-sm-12'><a href=" + link.url + ">" + link.labels + "</a></div>");
 });
 document.getElementById("weekList").innerHTML = list.join('');

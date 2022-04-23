@@ -2,23 +2,24 @@
   text-align: center;
 }
 
-li {
-  list-style: none;
-}
-
-li:hover {
-  background: rgba(255, 255, 255, 0.465);
-  border-radius: 20px;
-}
-
-li:hover a {
-  color: red;
-}
-
 a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+.clButtoms {
+  list-style: none;
+}
+
+.clButtoms:hover {
+  background: rgba(255, 255, 255, 0.465);
+  border-radius: 20px;
+}
+
+.clButtoms:hover a {
+  font-size: 25px;
+  color: red;
 }
 
 .bgImg {
