@@ -31,4 +31,17 @@ a {
   border-radius: 30px;
   border: 2px rgba(255, 255, 255, 0.505) solid;
 }
+
+.icon {
+  border: 2px white solid;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.icon:hover {
+  background: rgba(255, 255, 255, 0.374);
+  width: 103px;
+  height: 103px;
+}
 /*# sourceMappingURL=Style.css.map */
