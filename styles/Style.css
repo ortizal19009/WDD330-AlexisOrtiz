@@ -33,13 +33,13 @@ a {
 }
 
 .icon {
-  border: 2px white solid;
   border-radius: 30px;
   width: 100px;
   height: 100px;
 }
 
 .icon:hover {
+  border: 2px white solid;
   background: rgba(255, 255, 255, 0.374);
   width: 103px;
   height: 103px;

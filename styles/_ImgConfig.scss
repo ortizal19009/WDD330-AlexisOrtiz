@@ -2,11 +2,11 @@ $iconSize : 100px;
 $borderColor: white;
 $backgroundColor :rgba(255, 255, 255, 0.374); 
 .icon{
-    border: 2px $borderColor solid;
     border-radius: 30px;
     width: $iconSize;
     height: $iconSize;
     &:hover{
+        border: 2px $borderColor solid;
         background:$backgroundColor;
         width: $iconSize +3;
         height: $iconSize +3;
