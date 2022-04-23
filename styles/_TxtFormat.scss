@@ -1,0 +1,18 @@
+.txtAC {
+    text-align: center;
+}
+li{
+    list-style: none;
+    &:hover{
+        background: rgba(255, 255, 255, 0.465);
+        border-radius:20px;
+        a{
+            color: red;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
