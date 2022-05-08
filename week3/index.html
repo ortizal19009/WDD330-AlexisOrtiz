@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/Style.css" />
+    <title>Week-3</title>
+  </head>
+  <body class="bgImg">
+    <div class="container py-3">
+      <header class="txtCP txtAC py-3">
+        <h1>Week-3</h1>
+      </header>
+      <section class="txtCP container py-3">
+        <article class="container">
+          <div class="txtAC row">
+            <div class="col-md-10">
+              <h2>Notes JavaScript List and Arrays</h2>
+            </div>
+            <div class="col-md-2">
+              <a href="../teamActivies/team_activity2_arrayCardio1.html">
+                <img src="../img/teamwork.png" alt="" class="icon" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <hr />
+            <h3>CHAPTER 5 OBJECTS --> Regular Expressions</h3>
+            <p>
+              Creating Regular Expressions There are two ways to create a
+              regular expression. The first, and preferred way, is to use the
+              literal notation of writing the regular expression between forward
+              slashes that we’ve already seen: const pattern = /[a-zA-Z]+ing$/;
+              Alternatively, you can create a new instance of the RegExp object
+              using the new operator and a constructor function: const pattern =
+              new RegExp('[a-zA-Z]+ing'); You can use the test() method to see
+              if a string (passed to the method as a parameter) matches the
+              regular expression pattern. It returns true if the pattern is in
+              the string, and false if it isn’t. pattern.test('joke'); << false
+              pattern.test('joking'); << true pattern.test('jokingly'); << false
+              The exec() method works in the same way as the test() method, but
+              instead of returning true or false, it returns an array containing
+              the first match found, or null if there aren’t any matches:
+              pattern.exec('joke'); << null pattern.exec('joking'); << [
+              'joking', index: 0, input: 'joking' ]
+            </p>
+          </div>
+          <hr />
+          <h3>CHAPTER 6 --> THE DOCUMENT OBJECT MODEL</h3>
+          <h2>Node Type property</h2>
+
+          <p>
+            For example, we can use the nodeType property to find out what type
+            of node it is: body.nodeType; 1 All nodes have a numerical code to
+            signify what type they are. These are summmarized in the table
+            below. Code Type 1 element 2 attribute 3 text 8 comment 9 body There
+            are other types not covered in the table, but these aren’t used in
+            HTML documents. As we can see from the table, a code of 1 confirms
+            that body is an element node. We can also use the nodeName property
+            to find the name of the element: body.nodeName; "BODY" Not Actually
+            Arrays Node lists are array-like objects, but they are not arrays.
+            You can access each item using index notation. For example,
+            document.images[0] will return the first image in the node list of
+            all the images in the document. They also have a length property,
+            which can be used to iterate through every element using a for loop,
+            like so: for (let i=0 ; i document.images.length ; i++) { // do
+            something with each image using document.images[i] } Node lists
+            don’t have any other array methods such as slice, splice and join.
+            ES6 makes it very easy to turn a node list into an array, however.
+            You can either use the Array.from() method: const imageArray =
+            Array.from(document.images); Or you can use the spread operator:
+            const imageArray = [...document.images]; Once the node list has been
+            turned into an array, you can use all the array methods on it. some
+            attribute names such as class and for are reserved keywords in
+            JavaScript, so we need to use className and htmlFor instead.
+          </p>
+          <h2>Class list</h2>
+          <p>
+            className Be Careful Updating className Changing the className
+            property of an element by assignment will overwrite all other
+            classes that have already been set on the element. This problem can
+            be avoided by using the classList property instead.
+          </p>
+          <p>
+            classList wonderWoman.classList.add('warrior');
+            wonderWoman.className; "hero warrior"
+            wonderWoman.classList.remove('warrior'); The toggle method is a
+            particularly useful method that will add a class if an element
+            doesn’t have it already, and remove the class if it does have it. It
+            returns true if the class was added and false if it was removed. For
+            example: wonderWoman.classList.toggle('hero'); // will remove the
+            'hero' class false wonderWoman.classList.toggle('sport'); // will
+            add the 'hero' class back true The contains method will check to see
+            if an element has a particular class:
+            wonderWoman.classList.contains('hero'); true
+            wonderWoman.classList.contains('villain'); false function
+            addClass(element,newClass){ if (element.className) {
+            element.className = element.className + ' ' + newClass; } else {
+            element.className = newClass; } return element.className; }
+          </p>
+        </article>
+      </section>
+      <section class="txtCP container py-2">
+        <article class="txtAC">
+          <div class="row">
+            <div class="col-md">
+              <a href="../week2/index.html">
+                <img src="../img/back.png" class="icon" alt=""
+              /></a>
+            </div>
+            <div class="col-md">
+              <a href="../index.html">
+                <img src="../img/hogar-ecologico.png" class="icon" alt=""
+              /></a>
+            </div>
+            <div class="col-md">
+              <a href="# <!-- ../week2/index.htm -->l">
+                <img src="../img/right-arrow.png" class="icon" alt=""
+              /></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
