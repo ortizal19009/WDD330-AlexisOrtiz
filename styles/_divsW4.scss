@@ -1,0 +1,28 @@
+$borderSquare: 2px black solid;
+$hw :165px;
+.gameContainer{
+    margin-top: 100px;
+    //border: $borderSquare;
+    height:500px;
+    width: 500px;
+    text-align: center;
+    
+}
+.square{
+    border: $borderSquare;
+    height: $hw;
+    width: $hw;
+
+}
+.sOne,.sTwo,.sThree{
+    border-top: none;
+}
+.sOne,.sFour, .sSeven{
+    border-left: none;
+}
+.sThree, .sSix, .sNine{
+    border-right: none;
+}
+.sSeven, .sEigth,.sNine{
+    border-bottom: none;
+}

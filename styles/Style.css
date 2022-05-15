@@ -45,4 +45,33 @@ a {
   width: 103px;
   height: 103px;
 }
+
+.gameContainer {
+  margin-top: 100px;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+}
+
+.square {
+  border: 2px black solid;
+  height: 165px;
+  width: 165px;
+}
+
+.sOne, .sTwo, .sThree {
+  border-top: none;
+}
+
+.sOne, .sFour, .sSeven {
+  border-left: none;
+}
+
+.sThree, .sSix, .sNine {
+  border-right: none;
+}
+
+.sSeven, .sEigth, .sNine {
+  border-bottom: none;
+}
 /*# sourceMappingURL=Style.css.map */
