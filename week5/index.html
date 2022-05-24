@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="../styles/Style.css" />
+  <title>Week-5</title>
+</head>
+
+<body class="bgImg">
+  <div class="container py-3">
+    <header class="txtCP txtAC py-3">
+      <h1>Week-5</h1>
+    </header>
+    <section class="txtCP container py-3">
+      <article class="container">
+        <div class="txtAC row">
+          <div class="col-md-2">
+            <a href="./todoList/toDo.html">
+              <img src="../img/practica.png" alt="" class="icon" />
+            </a>
+          </div>
+          <div class="col-md-8">
+            <h2>Event.currentTarget
+            </h2>
+            <p>The currentTarget read-only property of the Event interface identifies the current target for the event,
+              as the event traverses the DOM. It always refers to the element to which the event handler has been
+              attached, as opposed to Event.target, which identifies the element on which the event occurred and which
+              may be its descendant.
+              Event.currentTarget is interesting to use when attaching the same event handler to several elements.</p>
+            <h2>Event.target
+            </h2>
+            <p>Event.target
+              The target property of the Event interface is a reference to the object onto which the event was
+              dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling
+              or capturing phase of the event.
+
+
+              The event.target property can be used in order to implement event delegation.</p>
+            <h1>Notes from JavaScript: Novice to Ninja, 2nd Edition
+            </h1>
+            <h2>Chapter 10: Testing and Debugging
+            </h2>
+            <p>Chapter 10: Testing and Debugging
+              Tip
+              A ninja programmer should ensure that the code they write fails loudly in development so any errors can be
+              identified and fixed quickly. In production, a ninja programmer should try to make the code fail
+              gracefully (although not completely silently ― we still need to know there’s an error), so the user
+              experience is not affected, if possible. This is achieved by making sure exceptions are caught and dealt
+              with, and code is tested rigorously.</p>
+            <h2>Error Objects
+            </h2>
+            <p>An error object can be created by the host environment when an exception occurs, or it can be created in
+              the code using a constructor function, like so:
+
+              const error = new Error('Oops, something went wrong');
+              There are seven more error objects used for specific errors:
+              EvalError is not used in the current ECMAScript specification and only retained for backwards
+              compatibility. It was used to identify errors when using the global eval() function.
+              RangeError is thrown when a number is outside an allowable range of values.
+              ReferenceError is thrown when a reference is made to an item that doesn’t exist. For example, calling a
+              function that hasn't been defined.
+              SyntaxError is thrown when there’s an error in the code’s syntax.
+              TypeError is thrown when there’s an error in the type of value used; for example, a string is used when a
+              number is expected.
+              URIError is thrown when there’s a problem encoding or decoding the URI.
+              InternalError is a non-standard error that is thrown when an error occurs in the JavaScript engine. A
+              common cause of this too much recursion.
+              These error objects can also be used as constructors to create custom error objects:
+              const error = new TypeError('You need to use numbers in this function');</p>
+            <h2>TEST-DRIVEN DEVELOPMENT
+            </h2>
+            <p>Test-driven development(TDD) is the process of writing tests before any actual code. Obviously these
+              tests will initially fail, because there is no code to test. The next step is to write some code to make
+              the tests pass. After this, the code is refactored to make it faster, more readable, and remove any
+              repetition. The code is continually tested at each stage to make sure it continues to work. This process
+              should be followed in small piecemeal chunks every time a new feature is implemented, resulting in the
+              following workflow:
+              Write tests (that initially fail)
+              Write code to pass the tests
+              Refactor the code
+              Test refactored code
+              Write more tests for new features
+              This is often referred to as the “red-green-refactor” cycle of TDD, as failing tests usually show up as
+              red, and tests that pass show as green.
+              Chapter Summary
+              show
+              Bugs are unavoidable in code, and it’s best to find them early rather than later.
+              JavaScript can be put into strict mode using the string "use strict". This can be used in a whole file or
+              just a single function.
+              Linting tools can be used to ensure your code follows good practice and conventions.
+              Feature detection can check whether a method is supported before calling it, helping to avoid an exception
+              being thrown.
+              The console and browser’s built-in debugging tool can be used to interactively find and fix bugs in code.
+              Exceptions can be thrown using the throw statement.
+              An error object is created when an exception occurs.
+              Any code placed inside a try block will pass any error objects to a catch block when an exception occurs.
+              Any code inside a finally block will run if an exception does or does not occur.
+              Test-driven development is the practice of writing tests that fail, then writing the code that passes the
+              test, then refactoring the code every time a new feature is implemented.
+              The Jest framework can be used to test your code.</p>
+          </div>
+          <div class="col-md-2">
+            <a href="../teamActivies/TeamActivityWeek5/team_activity.html">
+              <img src="../img/teamwork.png" alt="" class="icon" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <hr />
+
+      </article>
+    </section>
+    <section class="txtCP container py-2">
+      <article class="txtAC">
+        <div class="row">
+          <div class="col-md">
+            <a href="../week4/index.html">
+              <img src="../img/back.png" class="icon" alt="" /></a>
+          </div>
+          <div class="col-md">
+            <a href="../index.html">
+              <img src="../img/hogar-ecologico.png" class="icon" alt="" /></a>
+          </div>
+          <div class="col-md">
+            <a href="../week6/index.html">
+              <img src="../img/right-arrow.png" class="icon" alt="" /></a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+
+</html>
