@@ -1,0 +1,65 @@
+.taskList {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
+li{
+    margin-bottom:5px;
+  border: solid black 2px;
+  border-radius: 10px;
+  /* margin-top: 0px;
+    margin-bottom: 0px; */
+}
+label {
+  font-size: 2em;
+}
+
+.inputBox {
+  width: 2em;
+  height: 2em;
+  font-size: 20px;
+}
+
+.btnClose,
+.btnAdd {
+  width: 2em;
+  height: 2em;
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+.btnActive{
+    border-radius: 5px;
+    border:solid black 1px;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    position:absolute;
+}
+.btnClose:hover,
+.btnAdd:hover {
+  border-radius: 50%;
+  background-color: rgba(104, 104, 104, 0.244);
+  color: white;
+}
+#counterBox {
+  border: 2px black solid;
+}
+.alingFather {
+  position: relative;
+}
+.alingChild {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+}
+#inputAdd{
+    width: 100%;
+    height:2em;
+    border:none;
+    border-bottom: solid rgb(0, 0, 0) 3px;
+}

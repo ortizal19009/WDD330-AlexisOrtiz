@@ -1,0 +1,1 @@
+import writeToLS from './ls';

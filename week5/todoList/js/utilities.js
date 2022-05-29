@@ -1,0 +1,3 @@
+function onTouch(elementSelector, callback){
+    
+}

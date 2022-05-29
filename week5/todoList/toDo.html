@@ -15,7 +15,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../styles/Style.css" />
+    <link rel="stylesheet" href="./Style.css" />
     <title>toDo-list</title>
   </head>
   <body>
@@ -23,17 +23,45 @@
       <div class="header text-center">
         <h1>Todos</h1>
       </div>
-      <div class="row taskList">
-        <ul>
-          <li><div class="list">
-            <label for="">
-            <input type="checkbox" name="" id="">
-              Task
-            </label>
-            <button>X</button>
-          </div></li>
+      <div class="taskList ">
+        <ul class="ulLis container" id="ulId">
+          <li class="row">
+            <div class="itemClass col-md-4 alingFather">
+              <input type="checkbox" name="" class="inputBox alingChild" />
+            </div>
+            <div class="itemClass col-md-4">
+              <label for="" class="task"> Empty Task </label>
+            </div>
+            <div class="itemClass col-md-4 alingFather text-center">
+              <button class="btnClose alingChild">X</button>
+            </div>
+          </li>
         </ul>
+        <div class="row text-center" id="counterBox ">
+          <div class="col-md-4">
+            <label for="" class="">Number task</label>
+          </div>
+          <div class="col-md-4 alingFather">
+            <button class="btnActive">All active</button>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="">Completed</label>
+          </div>
+        </div>
+        <div class="row footer">
+          <div class="col-md-9 alingFather ">
+            <input type="text" class="alingChild" id="inputAdd" placeholder="Add new task"/>
+          </div>
+          <div class="col-md-3 text-center">
+            <button class="btnAdd">+</button>
+          </div>
+        </div>
       </div>
+      <ul class="ulLis" id="prueba">
+
+      </ul>
     </div>
+    <script src="./js/ls.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>
