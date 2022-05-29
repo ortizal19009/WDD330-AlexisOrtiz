@@ -1,16 +1,19 @@
 body {
+    
     background-color: var(--main-body-background);
 }
 
 
 #app {
+ 
     background-color: var(--main-app-background);
 }
 
 #maintitle {
     text-align: center;
     background-color: var(--main-color);
-    color: black;
+    color: rgb(1, 1, 1);
+    margin: 10px;
 }
 
 #maintitle * {
@@ -44,13 +47,13 @@ body {
 
 #addButton {
     font-size: 35px;
-    height: 40px;
-    margin: 0 5px;
+    height: 30px;
+    margin: 0 0px;
     padding: auto auto;
     background-color: var(--main-color);
     vertical-align: top;
     text-align: center;
-    border: 1px solid black;
+    border: none;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -66,15 +69,24 @@ body {
     padding: 0;
     margin: 10px auto 0px auto;
     width: 80%;
+    font-size: 100%;
+    
 }
 
+
 #taskBoard .task {
-    border: 1px solid black;
+    border: 1px solid rgba(18, 36, 200, 0.393);
+    border-radius: 10px;
     padding: 10px;
     margin: auto;
+    margin-top:5px;
     display: grid;
     grid-template-columns: auto 88% auto;
     align-items: center;
+}
+#taskBoard .task:hover{
+    background-color:rgba(57, 57, 57, 0.267);
+    cursor:pointer;
 }
 
 #taskBoard .task * {
@@ -117,12 +129,20 @@ body {
     grid-template-columns: 30% 20% 20% 20%;
     column-gap: 1%;
     font-size: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 #taskFooter * {
     display: inline-block;
     padding: 1%;
 }
+#taskFooter *:hover{
+    border-radius: 10px;
+    background-color:rgba(57, 57, 57, 0.267);
+    cursor:pointer;
+}
+
 
 .selected {
     border: 1px solid red;
@@ -132,7 +152,7 @@ body {
     text-decoration: line-through;
 }
 
-.activeFilter {
+/* .activeFilter {
     border: 1px solid black;
     border-radius: 5px;
-}
+} */
