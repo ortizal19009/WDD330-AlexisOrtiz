@@ -86,7 +86,7 @@ $(document).ready(function () {
           let datosHero = `
             <div class="list col-sm-4">
             <div class="card my-1">
-            <div class="card" style="width: 5rem;">
+            <div class="card" style="width: 18rem;">
             <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-text">${hero.name}</h3>
