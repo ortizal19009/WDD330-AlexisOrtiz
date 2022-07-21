@@ -19,7 +19,7 @@ $(document).ready(function () {
           let datos = "";
           i = movie.series.items;    
           for ( let x of i){
-            console.log(x.name);
+           /*  console.log(x.name); */
             datos = x.name;
         }
           /* console.log(i); */
@@ -82,7 +82,7 @@ $(document).ready(function () {
         }
         if (names != "") {
           let hero = arrayMarvel.find(foundHero);
-          console.log(hero);
+         
           let datosHero = `
             <div class="list col-sm-4">
             <div class="card my-1">
@@ -97,7 +97,7 @@ $(document).ready(function () {
           </div>
           `;
           $("#listaMarvel").html(datosHero);
-          console.log(hero.name);
+         
         } else {
           location.reload();
         }
