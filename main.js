@@ -23,7 +23,7 @@ const links = [
     labels: "Week-6 notes",
     url: "week6/index.html"
   },
-  /*{
+  {
     labels: "Week-7 notes",
     url: "week7/index.html"
   },
@@ -44,17 +44,10 @@ const links = [
     url: "wee-11/index.html"
   },
   {
-    labels: "Week-12 notes",
-    url: "week12/index.html"
+    labels: "Final Project",
+    url: "FinalProject/index.html"
   },
-  {
-    labels: "Week-13 notes",
-    url: "week13/index.html"
-  },
-  {
-    labels: "Week-14 notes",
-    url: "week14/index.html"
-  } */
+
 ];
 var list = links.map(function (link) {
   return ("<div class='clButtoms col-md-3 col-sm-12'><a href=" + link.url + ">" + link.labels + "</a></div>");
