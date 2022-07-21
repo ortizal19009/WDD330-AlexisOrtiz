@@ -1,19 +1,22 @@
+import { findHero } from "./funciones.js";
 $(document).ready(function () {
-    const ApiKeyPublic = "32e24560c577fa69e6a5da0dc002dc9e";
-    const ApiKeyPrivate = "a1cadff6ed4ad893877099254f228306de99e67b";
-    const url =
+  const ApiKeyPublic = "32e24560c577fa69e6a5da0dc002dc9e";
+  const ApiKeyPrivate = "a1cadff6ed4ad893877099254f228306de99e67b";
+  const url =
     "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=32e24560c577fa69e6a5da0dc002dc9e&hash=ce4920b93ae31ca70a47edef7ac31335";
-    const ts = 1;
-    const md5 =
+  const ts = 1;
+  const md5 =
     "1a1cadff6ed4ad893877099254f228306de99e67b32e24560c577fa69e6a5da0dc002dc9e";
-    const hash = "ce4920b93ae31ca70a47edef7ac31335";
+  const hash = "ce4920b93ae31ca70a47edef7ac31335";
 
   fetch(url)
-  .then((response) => response.json())
-  .then((response) => {
-    let listMarvel = "";
-    console.log(response.data.results);
-      for (let movie of response.data.results) {
+    .then((response) => response.json())
+    .then((response) => {
+      let listMarvel = "";
+      let listNames = "";
+      let arrayMarvel = response.data.results;
+      console.log(arrayMarvel);
+      for (let movie of arrayMarvel) {
         listMarvel += `
         <div class="list col-sm-6">
         <div class="card my-1">
@@ -26,9 +29,17 @@ $(document).ready(function () {
       </div>
         </div>
       </div>
-      `
-    }
-    $('#listaMarvel').html(listMarvel) ;
-})
-.catch((error) => console.log("Hay un error" + error));
+      `;
+      }
+      $("#listaMarvel").html(listMarvel);
+
+      for (let movieName of arrayMarvel) {
+        listNames += `
+        <option value="${movieName.name}">
+        `;
+      }
+      $("#listNames").html(listNames);
+      findHero.apply(this, arrayMarvel);
+    })
+    .catch((error) => console.log("Hay un error" + error));
 });
